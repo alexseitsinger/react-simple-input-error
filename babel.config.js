@@ -1,8 +1,8 @@
 module.exports = {
   presets: [
     ["@babel/preset-env", {
-      corejs: 3,
-      useBuiltIns: "entry",
+      //corejs: 3,
+      //useBuiltIns: "entry",
     }],
     "@babel/preset-react",
     ["@emotion/babel-preset-css-prop", {
