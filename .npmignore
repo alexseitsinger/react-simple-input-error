@@ -1,6 +1,12 @@
 src/
 node_modules/
 .babelrc
+babel.config.js
+webpack.config.dev.js
+jest.config.js
+jest.setup.js
+.eslintrc.js
+.eslintignore
 webpack.config.js
 yarn-error.log
 yarn.lock

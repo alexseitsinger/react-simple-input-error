@@ -1,16 +1,16 @@
 const path = require("path")
 
 const nodeExternals = require("webpack-node-externals")
-const TerserPlugin = require("terser-webpack-plugin")
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "production",
+  mode: "development",
   target: "node",
-  devtool: false,
+  devtool: "source-map",
   output: {
     path: path.resolve("./dist"),
-    filename: "[name].js",
+    filename: "[name].dev.js",
+    sourceMapFilename: "[name].dev.js.map",
     libraryTarget: "commonjs2",
   },
   module: {
@@ -22,24 +22,9 @@ module.exports = {
       },
     ],
   },
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new TerserPlugin({
-        extractComments: false,
-        warnings: false,
-        sourceMap: true,
-        terserOptions: {
-          output: {
-            comments: false,
-          },
-        },
-      }),
-    ],
-  },
   externals: [
     nodeExternals({
-      modulesFromFile: {
+      modulesForFile: {
         include: ["devDependencies", "peerDependencies"],
         exclude: ["dependencies"],
       },
@@ -47,8 +32,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      src: path.resolve("./src"),
-      tests: path.resolve("./tests"),
+      "tests": path.resolve("./tests"),
+      "src": path.resolve("./src"),
     },
   },
 }
