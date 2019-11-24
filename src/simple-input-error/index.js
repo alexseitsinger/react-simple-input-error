@@ -91,7 +91,7 @@ export function SimpleInputError({
 
   return isVisible ? (
     <Container
-      className={"SimpleInputError-Container"}
+      className={"SimpleInputError"}
       position={position}
       onClick={onClick}
       css={{
