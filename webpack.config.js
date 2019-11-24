@@ -27,9 +27,9 @@ module.exports = {
     minimizer: [
       new TerserPlugin({
         extractComments: false,
-        warnings: false,
         sourceMap: true,
         terserOptions: {
+          warnings: false,
           output: {
             comments: false,
           },
