@@ -330,6 +330,13 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
+"@babel/plugin-syntax-export-namespace-from@^7.7.4":
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-export-namespace-from/-/plugin-syntax-export-namespace-from-7.7.4.tgz#116c3e5db0d3e41018665528a468bc0f336044c3"
+  integrity sha512-YTc2djwMzJjiTTUJxJunRAnK0xW6OrmCSrgBc7QbWtpUo44FCkhZQtNcwZUqVf3sc4JFxhreiJ/P7YkmCTw4rg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0"
+
 "@babel/plugin-syntax-json-strings@^7.7.4":
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-json-strings/-/plugin-syntax-json-strings-7.7.4.tgz#86e63f7d2e22f9e27129ac4e83ea989a382e86cc"
